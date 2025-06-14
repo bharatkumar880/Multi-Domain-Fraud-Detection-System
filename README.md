@@ -1,4 +1,4 @@
-"# Multi-Domain-Fraud-Detection-System" 
+
 Fraudulent activities are rapidly increasing in areas such as online transactions, automobile insurance claims, and AI-generated content. Most existing systems are designed to detect fraud in only one domain and lack scalability and secure access mechanisms.
 
 To address this, we developed a unified and secure web-based fraud detection system using Streamlit, capable of detecting fraud in the following three domains:
