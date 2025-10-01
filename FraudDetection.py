@@ -56,7 +56,7 @@ class FraudDetectionApp:
             """)
             self.credit_card_fraud_detection()
         elif self.model_choice == "Insurance Fraud Detection":
-            st.sidebar.image(r"C:\Users\HP\Downloads\FraudFortify\FraudFortify\Images\car.png", use_container_width=True)
+            st.sidebar.image("Images/car.png", use_container_width=True)
             st.sidebar.markdown("""
                 ### General Fraud Detection
                 - Input claim details.
@@ -64,7 +64,7 @@ class FraudDetectionApp:
             """)
             self.general_fraud_detection()
         elif self.model_choice == "Detect GPT Generated Text":
-            st.sidebar.image(r"C:\Users\HP\Downloads\FraudFortify\FraudFortify\Images\chat.png", use_container_width=True)
+            st.sidebar.image("Images/chat.png", use_container_width=True)
             st.sidebar.markdown("""
                 ### Detect GPT-Generated Text
                 - Paste text or upload a file.
