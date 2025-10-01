@@ -14,8 +14,8 @@ class FraudDetectionApp:
         self.label_encoders = None
 
     def load_credit_card_model(self):
-        if not self.credit_card_model:
-            self.credit_card_model = joblib.load(r"C:\Users\HP\Downloads\FraudFortify\FraudFortify\Model\ann_model.pkl")
+        model_path = os.path.join("Model", "ann_model.pkl")  # relative path
+        self.credit_card_model = joblib.load(model_path)
         return self.credit_card_model
 
     def load_fraud_model(self):
