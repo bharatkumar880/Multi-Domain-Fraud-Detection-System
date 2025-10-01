@@ -20,7 +20,7 @@ st.markdown(
         unsafe_allow_html=True
 )
 
-st.image(r"C:\Users\HP\Downloads\FraudFortify\FraudFortify\Images\coverpage.png")
+st.image("Images/coverpage.png")
 st.markdown("""
 
 
