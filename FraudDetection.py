@@ -48,7 +48,7 @@ class FraudDetectionApp:
 
         # Show additional information based on the selection
         if self.model_choice == "Credit Card Fraud Detection":
-            st.sidebar.image(r"C:\Users\HP\Downloads\FraudFortify\FraudFortify\Images\card.png", use_container_width=True)
+            st.sidebar.image("Images/card.png", use_container_width=True)
             st.sidebar.markdown("""
                 ### Credit Card Fraud Detection
                 - Upload transaction data.
