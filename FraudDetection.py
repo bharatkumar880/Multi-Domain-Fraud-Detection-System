@@ -28,7 +28,7 @@ class FraudDetectionApp:
 
     def run(self):
         # Add a sidebar image
-        st.sidebar.image(r"C:\Users\HP\Downloads\FraudFortify\FraudFortify\Images\main.png", use_container_width=True)  # Ensure the image file exists
+        st.sidebar.image("Images/main.png", use_container_width=True)
 
         # Add a brief summary of the application
         st.sidebar.markdown("""
