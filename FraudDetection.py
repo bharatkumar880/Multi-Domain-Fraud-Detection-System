@@ -21,11 +21,17 @@ class FraudDetectionApp:
 
     def load_fraud_model(self):
         if not self.fraud_model:
-            with open(r'C:\Users\HP\Downloads\FraudFortify\FraudFortify\Model\fraud_detection_model.pkl', 'rb') as model_file:
+            base_path = os.path.dirname(__file__)
+
+            model_path = os.path.join(base_path, "Model", "fraud_detection_model.pkl")
+            encoders_path = os.path.join(base_path, "Model", "label_encoders.pkl")
+
+            with open(model_path, 'rb') as model_file:  
                 self.fraud_model = pickle.load(model_file)
-            with open(r'C:\Users\HP\Downloads\FraudFortify\FraudFortify\Model\label_encoders.pkl', 'rb') as encoders_file:
+            with open(encoders_path, 'rb') as encoders_file:
                 self.label_encoders = pickle.load(encoders_file)
         return self.fraud_model, self.label_encoders
+
 
     def run(self):
         # Add a sidebar image
