@@ -63,7 +63,7 @@ class FraudDetectionApp:
             """)
             self.credit_card_fraud_detection()
         elif self.model_choice == "Insurance Fraud Detection":
-            car_image_path = os.path.join(os.getcwd(), "Images", "car.png)
+            car_image_path = os.path.join(os.getcwd(), "Images", "car.png")
             if os.path.exists(car_image_path):
                 st.sidebar.image(car_image_path, use_container_width=True)
             else:
